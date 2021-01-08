@@ -1,0 +1,198 @@
+:root{
+  --primary-color: rgb(0, 95, 133);
+  --primary-light:rgba(117, 204, 238, 0.5);
+  --text-light:white;
+}
+/* * {
+  box-sizing: border-box;
+} */
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.containerwidth{
+  width:100%;
+  max-width: 1200px;
+}
+nav{
+  position: fixed;
+  height: 70px;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+ /* place relative in middle: 2lines later*/
+  /* margin-left: auto; 
+  margin-right: auto;  */
+  background-color: white;
+}
+.detailsIcon{
+  position:absolute;
+  font-size: 25px;
+  left:15px;
+  top:15px;
+  /* background-color:blue; */
+}
+.myfood{
+  position:absolute;
+ /* place absolute in middle: 2lines later*/
+  left: 50%;
+  transform: translateX(-50%);
+
+  top:-4%;
+  font-size: 24px;
+  /* background-color: #fff; */
+}
+.mail{
+  position:absolute;
+  right: 15px;
+  font-size: 22px;
+  /* background-color: yellow; */
+}
+.foodscontainer{
+  margin-left: auto; 
+  margin-right: auto;
+}
+.navbellow{
+  margin-top: 100px;
+}
+.foods-row-container{
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  /* background-color: red; */
+}
+.food{
+  width:23%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+.food>h3,p{
+  text-align: center;
+}
+.food>h3{
+  font-size: 23px;
+}
+.food>p{
+  font-size: 17px;
+}
+.foodimage{
+  width: 100%;
+}
+.pages{
+  text-align: center;
+  padding:40px 0;
+}
+.pages a{
+  /* create square around text: next line  */
+  padding: 8px 16px;
+}
+.pages>a:hover{
+  padding: 8px 16px;
+  background-color: black;
+  color:white;
+}
+.active{
+  padding: 8px 16px;
+  background-color: black;
+  color:white;
+}
+a.active:hover {
+  padding: 8px 16px;
+  background-color: grey;
+  color:black;
+}
+
+.intro{
+  /* background-color: red; */
+}
+.intro>h3,h4,p{
+  text-align: center;
+  /* background-color:red; */
+}
+.intro>h3{
+  font-size: 24px;
+  padding:20px 0;
+}
+.intro>h4{
+  font-size: 20px;
+}
+.chef{
+  width:65%;
+  /* border:2px solid red; */
+  margin-left: 18%;
+}
+.footer-row-container{
+  display: flex;
+  /* background-color: red; */
+  padding-bottom: 30px;
+}
+.footer-row-container>div{
+  width:33%;
+  padding:20px;
+}
+.footer-row-container h3{
+  font-size: 23px;
+}
+.footer-row-container h5{
+  display: inline;
+  font-size: 18px;
+  margin-left: 20px;
+}
+.footer-row-container p{
+  display: inline;
+  font-size: 16px;
+  margin-left: 20px;
+}
+.footer{
+  /* background-color: red; */
+}
+.blog{
+  /* background-color: green; */
+}
+.tags{
+  /* background-color: blue; */
+}
+
+li{
+  float: left;
+  padding:0 10px;
+  background-color: rgb(92, 90, 90);
+  color:white;
+  list-style-type: none;
+  margin:3px;
+  
+  /* font-size: 14px; */
+}
+
+@media screen and (max-width: 600px) {
+  .food{   
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    /* padding-top: 40px; */
+  }
+  .foods-row-container{
+    display: inline;
+  }
+  .foodscontainer{
+    margin-top: 80px;
+  }
+  .chef{
+    width:90%;
+    margin-left: 5%;
+  }
+  .footer-row-container>div{
+    width:90%;
+    padding:20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer-row-container{
+    display: inline;
+  }
+ .tags{
+   height: 200px;
+ }
+}
+
+
+
